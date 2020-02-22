@@ -10,13 +10,13 @@ const Icons = () =>
       <img src={styleIcon} alt="" />
       <h3>Style</h3>
     </div>
-    <div  className='icon-item'>
-      <img src={qualityIcon} alt="" />
-      <h3>Quality</h3>
-    </div>
     <div className='icon-item'>
       <img src={fitIcon} alt="" />
       <h3>Fit</h3>
+    </div>
+    <div  className='icon-item'>
+      <img src={qualityIcon} alt="" />
+      <h3>Quality</h3>
     </div>
   </div>
 

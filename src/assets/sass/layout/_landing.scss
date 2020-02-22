@@ -53,11 +53,16 @@
 .contact {
   background-color: _palette(bg-dark);
 
+  p {
+    text-align: center;
+    margin-bottom: 50px;
+
+  }
+
   h2 {
     color: #fff;
     font-weight: 100;
     text-align: center;
-    margin-bottom: 50px;
   }
 
   .inner {
@@ -110,7 +115,6 @@
   .about {
     background-size: unset;
     background-position: right;
-
   }
 }
 

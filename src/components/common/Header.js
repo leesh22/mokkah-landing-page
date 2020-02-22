@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import '../../assets/sass/main.scss';
-import mokkahIcon from '../../images/mokkah-icon-white.png';
+import mokkahIcon from '../../images/mokkah-icon\.png';
 
 const Header = () => (
   <header id="header">
