@@ -1,24 +1,27 @@
 import React from 'react';
 
 import Layout   from '../components/common/layout';
+import Header from '../components/common/Header';
 import Footer   from '../components/common/Footer';
-import Sidebar  from '../components/common/Sidebar';
 
-import Introduction from '../components/introduction/Introduction';
-import Features     from '../components/features/Features';
-import Capabilities from '../components/capabilities/Capabilities';
-import Contact      from '../components/contact/Contact';
+import Icons from '../components/landing/icons';
+import Hero from '../components/landing/hero';
+import Contact from '../components/landing/contact';
+import About from '../components/landing/about';
 
 const IndexPage = () =>
   <Layout>
-    <Sidebar />
+    <Header />
 
     <div id="wrapper">
-      <Introduction />
-      <Features />
-      <Capabilities />
-      <Contact />
+      <section id="main" className="wrapper landing">
+        <Hero/>
+        <Icons/>
+        <Contact/>
+        <About/>
+      </section>
     </div>
+
 
     <Footer />
   </Layout>

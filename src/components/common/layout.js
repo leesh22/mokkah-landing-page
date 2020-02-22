@@ -5,6 +5,12 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import '../../assets/sass/main.scss';
 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+toast.configure()
+
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -21,7 +27,7 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Hyperspace' },
+            { name: 'description', content: 'Mokkah Shoes' },
             { name: 'keywords', content: 'site, web' },
           ]}
         >

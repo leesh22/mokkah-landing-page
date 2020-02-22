@@ -8,7 +8,7 @@
 
 #header {
   @include vendor('display', 'flex');
-  background-color: _palette(accent1);
+  background-color: _palette(bg-dark);
   cursor: default;
   padding: 1.75em 2em;
 
@@ -17,7 +17,10 @@
     color: _palette(fg-bold);
     display: block;
     font-size: 1.25em;
-    font-weight: _font(weight-bold);
+
+    img {
+      width: 40px;
+    }
   }
 
   > nav {
@@ -46,7 +49,7 @@
           border: 0;
           color: _palette(fg-light);
           display: inline-block;
-          font-size: 0.6em;
+          font-size: 1em;
           font-weight: _font(weight-bold);
           letter-spacing: _font(kerning-alt);
           text-transform: uppercase;
@@ -71,6 +74,7 @@
     display: block;
     padding: 0 2em;
     text-align: left;
+    text-align: center;
 
     .title {
       font-size: 1.25em;

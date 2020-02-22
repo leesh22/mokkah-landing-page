@@ -1,0 +1,116 @@
+///
+/// Hyperspace by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Landing page */
+.hero {
+  background-color: _palette(bg-col);
+
+  .title {
+    color: _palette(bg-dark);
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    text-align: center;
+  }
+
+  .inner {
+    width: 85%;
+    margin: 0 auto;
+    padding: 4em 4em 2em 4em;
+  }
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  justify-content: space-evenly;
+
+  .icon-item {
+    padding: 3em 1em;
+  }
+
+  h3 {
+    color: _palette(bg-dark);
+    text-align: center;
+    font-weight: 100;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+  }
+
+  img {
+    width: 100px;
+  }
+}
+
+.contact {
+  background-color: _palette(bg-dark);
+
+  h2 {
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .inner {
+    width: 85%;
+    margin: 0 auto;
+    padding: 4em 4em 2em 4em;
+  }
+}
+
+.about {
+  background: url('images/about-bg.png');
+  color: _palette(bg-dark);
+  background-size: cover;
+
+  h2 {
+    color: _palette(bg-dark);
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 50px;
+
+  }
+}
+
+.four-zero-four {
+  p {
+    color: _palette(bg-dark);
+  }
+
+  a {
+    font-weight: bold;
+  }
+}
+
+
+@include breakpoint('<=small') {
+  .hero .inner,
+  .contact .inner {
+    width: 100%;
+    padding: 2em 2em 2em 2em;
+
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  .icon-wrapper {
+    display: block;
+  }
+
+  .about {
+    background-size: unset;
+    background-position: right;
+
+  }
+}
+

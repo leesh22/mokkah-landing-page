@@ -33,8 +33,10 @@
 
 // Palette.
 	$palette: (
-		bg:					#312450,
-		bg-alt:				darken(#312450, 5),
+    bg:					#fff,
+    bg-col:     #a38068,
+    bg-dark:     #1b1a1a,
+		bg-alt:				darken(#020202, 5),
 		fg:					rgba(255,255,255,0.55),
 		fg-bold:			#ffffff,
 		fg-light:			rgba(255,255,255,0.35),
