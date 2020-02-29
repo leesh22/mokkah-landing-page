@@ -114,7 +114,7 @@ class ContactForm extends React.Component {
 
     return (
       <section>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} netlify>
           <div className="fields">
             <div className="field half">
               <label htmlFor="name">Name</label>
