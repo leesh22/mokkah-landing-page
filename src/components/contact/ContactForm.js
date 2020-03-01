@@ -154,7 +154,7 @@ class ContactForm extends React.Component {
               <button type="submit" className="button submit" >Send Message</button>
             </li>
           </ul>
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="contact" value="contact" />
         </form>
       </section>
     )
