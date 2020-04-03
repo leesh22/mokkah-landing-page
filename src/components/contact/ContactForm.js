@@ -47,7 +47,7 @@ class ContactForm extends React.Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "mokkah-contact", ...this.state })
     })
       .then(() => this.showNotification(false))
       .catch(error => this.showNotification(error));
@@ -114,7 +114,7 @@ class ContactForm extends React.Component {
 
     return (
       <section>
-        <form onSubmit={this.handleSubmit} name="contact" netlify netlify-honeypot="bot-field">
+        <form onSubmit={this.handleSubmit} name="mokkah-contact" netlify netlify-honeypot="bot-field">
           <div className="fields">
             <div className="field half">
               <label htmlFor="name">Name</label>
@@ -154,7 +154,7 @@ class ContactForm extends React.Component {
               <button type="submit" className="button submit" >Send Message</button>
             </li>
           </ul>
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="mokkah-contact" />
         </form>
       </section>
     )
