@@ -114,7 +114,13 @@ class ContactForm extends React.Component {
 
     return (
       <section>
-        <form onSubmit={this.handleSubmit} name="mokkah-contact" netlify netlify-honeypot="bot-field">
+        <form
+          name="mokkah-contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={this.handleSubmit}
+        >
           <div className="fields">
             <div className="field half">
               <label htmlFor="name">Name</label>
