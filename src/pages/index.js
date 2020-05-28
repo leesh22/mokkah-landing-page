@@ -8,6 +8,7 @@ import Icons from '../components/landing/icons';
 import Hero from '../components/landing/hero';
 import Contact from '../components/landing/contact';
 import About from '../components/landing/about';
+import Funding from '../components/landing/funding';
 
 const IndexPage = () =>
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = () =>
       <section id="main" className="wrapper landing">
         <Hero/>
         <Icons/>
+        <Funding/>
         <Contact/>
         <About/>
       </section>
