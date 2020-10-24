@@ -18,7 +18,7 @@ const IndexPage = () =>
       <section id="main" className="wrapper landing">
         <Hero/>
         <Icons/>
-        <Funding/>
+        {/* <Funding/> */}
         <Contact/>
         <About/>
       </section>
